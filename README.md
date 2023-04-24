@@ -1,9 +1,11 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <h1><b>Air Pollution Data Web App</b></h1>
-  <br/>
+   <img src="bese_logo.jpg" alt="logo" width="200"  height="auto" />
+    <br/>
+  
+  <h2><b>Air Pollution Data Web App</b></h2>
+  
 </div>
 
 <!-- TABLE OF CONTENTS -->
