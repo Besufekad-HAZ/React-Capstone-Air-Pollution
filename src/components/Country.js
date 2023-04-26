@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import {
   Chart as ChartJS, ArcElement, Tooltip, Legend,
 } from 'chart.js';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Doughnut } from 'react-chartjs-2';
 import { getInfo } from '../redux/country/country-slice';
 import '../stylesheet/Country.css';
@@ -50,7 +49,6 @@ const chartData = (infoArr) => {
   };
 };
 
-// eslint-disable-next-line react/prop-types
 const ChartRadar = ({ data }) => <Doughnut data={data} />;
 
 const Country = () => {

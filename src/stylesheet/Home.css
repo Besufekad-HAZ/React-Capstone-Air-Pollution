@@ -5,9 +5,7 @@
 
 .navHome h2 {
   font-family: "Candara", sans-serif;
-  /* stylelint-disable */
-  font-size: max(0.9rem, min(6.5vw, 7vh));
-  /* stylelint-enable */
+  font-size: calc(2rem + 0.8vw);
   width: 85%;
 }
 
