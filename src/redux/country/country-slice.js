@@ -1,4 +1,4 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const GET_INFO = 'air/region/GET_INFO';
 
@@ -13,21 +13,21 @@ const initialState = {
   so2: 0,
 };
 
-export const getInfo = createAsyncThunk(GET_INFO, async (coor) => {
+export const getInfo = createAsyncThunk(GET_INFO, async (coordinates) => {
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/air_pollution?lat=${coor[0]}&lon=${coor[1]}&appid=08be01b4b955123c0de4895bafc095ef`,
+    `https://api.openweathermap.org/data/2.5/air_pollution?lat=${coordinates[0]}&lon=${coordinates[1]}&appid=08be01b4b955123c0de4895bafc095ef`,
   );
   const result = await response.json();
-  return result;
+  return result.list[0].components;
 });
 
-const infoReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case `${GET_INFO}/fulfilled`:
-      return action.payload.list[0].components;
-    default:
-      return state;
-  }
-};
+const infoSlice = createSlice({
+  name: 'info',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(getInfo.fulfilled, (state, action) => action.payload);
+  },
+});
 
-export default infoReducer;
+export default infoSlice.reducer;

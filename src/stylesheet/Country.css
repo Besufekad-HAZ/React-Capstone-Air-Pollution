@@ -114,11 +114,11 @@
   }
 
   canvas {
-    max-width: auto;
+    max-width: max-content;
     margin: auto;
   }
 
-  /* Hide Pollution Info section on larger screens */
+  /* Update size of Pollution Info section on larger screens */
   .infoPollution {
     width: 85%;
     grid-column: 1 / span 3;

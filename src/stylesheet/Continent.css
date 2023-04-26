@@ -1,4 +1,4 @@
-.navRegion {
+.continents-nav {
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -6,12 +6,12 @@
   z-index: 1;
 }
 
-.navRegion h2 {
+.continents-nav h2 {
   width: 55%;
   text-align: center;
 }
 
-.navRegion a {
+.continents-nav a {
   color: #f9fffb;
   text-decoration: none;
   font-size: 1.2rem;
@@ -47,14 +47,14 @@
   text-align: center;
 }
 
-.countriesContainer {
+.countries_Container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   text-align: right;
   gap: 1px;
 }
 
-.countriesContainer > * {
+.countries_Container > * {
   color: #f9f9f9;
   font-size: 1.1rem;
 }
@@ -67,6 +67,8 @@
 
 .countries a:hover {
   border: 2px solid #fff;
+  color: white;
+  box-shadow: 0 10px 20px #afe6fd;
 }
 
 .countries a:nth-child(4n-3),
@@ -77,10 +79,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .navRegion h2 {
+  .continents-nav h2 {
     width: 75%;
     text-align: center;
   }
+
   .countries header img {
     max-width: 300px;
   }
@@ -93,7 +96,7 @@
     justify-content: center;
   }
 
-  .countriesContainer {
+  .countries_Container {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 1px;
   }
@@ -108,5 +111,7 @@
 
   .countries a:hover {
     border: 2px solid #fff;
+    color: white;
+    box-shadow: 0 10px 20px #afe6fd;
   }
 }

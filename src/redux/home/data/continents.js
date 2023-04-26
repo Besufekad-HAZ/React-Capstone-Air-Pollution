@@ -1,4 +1,4 @@
-const regions = [
+const continents = [
   {
     name: 'Europe',
     img: 'europe',
@@ -21,4 +21,4 @@ const regions = [
   },
 ];
 
-export default regions;
+export default continents;

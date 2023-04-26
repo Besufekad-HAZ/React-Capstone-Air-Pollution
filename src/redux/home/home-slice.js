@@ -1,11 +1,11 @@
 const GET_REGIONS = 'air/home/GET_REGIONS';
 
-export const getRegions = (payload) => ({
+export const getContinents = (payload) => ({
   type: GET_REGIONS,
   payload,
 });
 
-const regionsReducer = (state = [], action) => {
+const continentsReducer = (state = [], action) => {
   switch (action.type) {
     case GET_REGIONS:
       return action.payload;
@@ -14,4 +14,4 @@ const regionsReducer = (state = [], action) => {
   }
 };
 
-export default regionsReducer;
+export default continentsReducer;
