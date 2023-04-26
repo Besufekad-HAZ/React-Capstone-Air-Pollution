@@ -1,9 +1,15 @@
-import './App.css';
+// import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Region from './components/Region';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:country/*" element={<Region />} />
+      </Routes>
     </div>
   );
 }
