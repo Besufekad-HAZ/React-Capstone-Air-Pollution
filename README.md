@@ -84,7 +84,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- TO DO LIST TASK SCREENSHOT -->
+<!-- Air Pollution Web App SCREENSHOT -->
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
@@ -92,13 +92,13 @@
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
-- not available yet.
+- [Loom Presentation Video Link](https://www.loom.com/share/8c466a2029f041369e611916bc4ac33c)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A yet. It'll be available after final Deployment.
+- [Live App Link](https://644953ccb52d2a23ea2ab507--air-pollution-stats.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
