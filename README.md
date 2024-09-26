@@ -98,7 +98,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live App Link](https://644953ccb52d2a23ea2ab507--air-pollution-stats.netlify.app/)
+- [Live App Link](https://airpollution-seven.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
